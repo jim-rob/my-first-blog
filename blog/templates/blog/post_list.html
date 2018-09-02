@@ -8,15 +8,9 @@
         </div>
 
         <div>
-            <p>published: 2018/09/01</p>
-            <h2><a href="">My first post</a></h2>
-            <p>This is my first post.</p>
-        </div>
-
-        <div>
-            <p>published: 2018/09/01</p>
-            <h2><a href="">My second post</a></h2>
-            <p>This is my second post.</p>
+	  {% for post in posts %}
+             {{ post }}
+          {% endfor %}
         </div>
     </body>
 </html>
